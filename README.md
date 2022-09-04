@@ -6,7 +6,7 @@ This repository is for William and Mary’s CSCI 435 course Software Engineering
 
 The skillTest.java program needs 1 argument to run, which is the path of the Programming-Assignment-Data folder or any folder containing XML and matching png files to be boxed. Without an argument, the program will just output, “Please specify a path.” Therefore, to compile and run the program looks something like the following (except with a different path most likely):  
 
-  
+
 
 Javac skillTest.java  
 
