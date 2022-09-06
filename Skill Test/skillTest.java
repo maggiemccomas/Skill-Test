@@ -62,16 +62,15 @@ public class skillTest{
             ArrayList<Integer> coordinates = new ArrayList<Integer>();
             Node curNode;
             Element elem;
-            String classType;
             String boundary;
             String[] coordPoints;
 
             for (int iter = 0; iter < nodeList.getLength(); iter++){
                 curNode = nodeList.item(iter);
                 elem = (Element)curNode;
-                classType = elem.getAttribute("class");
 
-                if (classType.contains("Text") || classType.contains("Image") || classType.contains("Box") || classType.contains("Bar")){
+
+                if (!curNode.hasChildNodes()){
                     boundary = elem.getAttribute("bounds");
                     boundary = boundary.replace("][", ",");
                     boundary = boundary.replace("]", "");
